@@ -10,6 +10,10 @@
     --highlights: #E9C46A;
 }
 
+span{
+    color: var(--secondary);
+}
+
 body{
   background-color: var(--primary);
   color: white;
@@ -60,19 +64,20 @@ nav a:hover{
     border: var(--tertiary) solid 20px;
 }
 
-h1, h3{
+.main {
     color: var(--tertiary);
     font-weight: 700;
-    
 
 }
 
 .home {
-    height: 100vh;
     display: flex;
-    align-items: center;
+    
 }
 
 p{
     color: var(--highlights);
+    align-content: flex-end;
+
+
 }

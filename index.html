@@ -17,11 +17,11 @@
       <nav>
         <div class="left">Bruhhh</div>
         <div class="righ">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
         </div>
       </nav>
     </header>
@@ -33,17 +33,25 @@
     <section class="home">
       <div class="right">
         <div class="main">
-            <h1>Hi,I'm Sahil Balchandani</h1>
-            <h3>developer</h3>
+          <h1>Hi, my name is<span class="secondary"> Sahil</span></h1>
+          <h3>And I'm a passionate </h3>
+          <span id="element"></span>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Expeditaaperiam praesentium velit laborum? Enim ea iusto, quam totam
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Expeditaaperiam praesentium velit laborum? Enim ea iusto, quam totam<br>
             dolore natus fugit repudiandae dolorum iste perferendis velit sunt
             id adipisci mollitia.
           </p>
         </div>
       </div>
     </section>
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Python", "Java", "DBMS", "Ethical hacking", "Full stack"],
+        typeSpeed: 60,
+      });
+    </script>
   </body>
 </html>
