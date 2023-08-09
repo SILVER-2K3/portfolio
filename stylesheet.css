@@ -137,6 +137,6 @@ p {
     margin-top: 70px;
     margin-left: 70px;
     border-radius: 50%;
-    border: var(--tertiary) solid 20px;
+    border: var(--tertiary) solid 10px;
   }
 }
