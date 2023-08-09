@@ -5,8 +5,12 @@
 
 :root {
   --primary: #081b29;
-  --secondary: #0077b6;
+  --secondary: #00abf0;
   --tertiary: white;
+}
+
+h1{
+    font-weight: 700;
 }
 
 span {
@@ -47,6 +51,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: transparent;
+  margin-top: 10px;
 }
 
 nav a {
@@ -60,7 +65,7 @@ nav a {
 
 nav a:hover {
   color: var(--secondary);
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 /* <---nav end -->*/
@@ -78,15 +83,82 @@ nav a:hover {
   padding-left: 30vh;
 }
 
+/*<--- main div-->*/
 .main {
   color: var(--tertiary);
   font-weight: 700;
 }
 
+.main .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 93%;
+    background: var(--secondary);
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 20px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: var(--secondary);
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: var(--secondary);
+}
+
+.btn-box a:nth-child(2):hover{
+    color: var(--primary);
+}
+
+.btn-box a:nth-child(2)::before{
+    background-color: var(--secondary);
+
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:var(--primary);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+
 p {
   color: var(--highlights);
   align-content: flex-end;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+/*<--- main div-->*/
 
 /*<-------custom cursor--------->*/
 
@@ -101,13 +173,14 @@ p {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 10000;
+  transition: .5s;
 }
 
 .cursor-1.active {
   height: 3rem;
   width: 3rem;
   opacity: 0.3;
-  transition: ease 0.3s;
+  transition: ease 0.5s;
 }
 
 .cursor-2 {
