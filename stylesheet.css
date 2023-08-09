@@ -19,6 +19,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.home {
+  display: flex;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -35,6 +39,8 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+
+/* <---nav start -->*/
 
 nav {
   display: flex;
@@ -54,7 +60,11 @@ nav a {
 
 nav a:hover {
   color: var(--secondary);
+  text-decoration: underline;
 }
+
+/* <---nav end -->*/
+
 .left img {
   width: 300px;
   margin-top: 60px;
@@ -73,11 +83,60 @@ nav a:hover {
   font-weight: 700;
 }
 
-.home {
-  display: flex;
-}
-
 p {
   color: var(--highlights);
   align-content: flex-end;
+}
+
+/*<-------custom cursor--------->*/
+
+.cursor-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: var(--tertiary);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.cursor-1.active {
+  height: 3rem;
+  width: 3rem;
+  opacity: 0.3;
+  transition: ease 0.3s;
+}
+
+.cursor-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.1rem;
+  width: 2.1rem;
+  border: 0.1rem solid var(--tertiary);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+  transition: 0.3s linear;
+}
+
+.cursor-2.active {
+  display: none;
+}
+
+/*<-------custom cursor end--------->*/
+
+/*<--media query-->*/
+@media (max-width: 450px) {
+  .left img {
+    width: 130px;
+    margin-top: 70px;
+    margin-left: 70px;
+    border-radius: 50%;
+    border: var(--tertiary) solid 20px;
+  }
 }
