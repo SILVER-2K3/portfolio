@@ -32,7 +32,7 @@
       </div>
       <div class="right">
         <div class="main">
-          <h1>Hi, my name is<span class="secondary"> Sahil</span></h1>
+          <h1>Hi, my name is <span id="secondary"></span></h1>
           <h3>And I'm a passionate</h3>
           <span id="element"></span>
           <p>
@@ -51,6 +51,13 @@
       var typed = new Typed("#element", {
         strings: ["Python", "Java", "DBMS", "Ethical hacking", "Full stack"],
         typeSpeed: 60,
+        loop:true,
+      });
+      
+
+      var typed = new Typed("#secondary", {
+        strings: ["Sahil"],
+        typeSpeed: 25,
       });
     </script>
   </body>
