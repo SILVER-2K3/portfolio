@@ -3,81 +3,81 @@
   padding: 0;
 }
 
-:root{
-    --primary:#264653;
-    --secondary: #2A9D8F;
-    --tertiary: #fab57c;
-    --highlights: #E9C46A;
+:root {
+  --primary: #081b29;
+  --secondary: #0077b6;
+  --tertiary: white;
 }
 
-span{
-    color: var(--secondary);
+span {
+  color: var(--secondary);
 }
 
-body{
+body {
   background-color: var(--primary);
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
 }
 .left {
-    font-size: 30px;
-    color: var(--highlights);
-    text-decoration: none;
-    font-weight: 600;
+  font-size: 30px;
+  color: var(--highlights);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: transparent;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
 }
 
 nav a {
-    font-size: 20px;
-    color: var(--highlights);
-    text-decoration: none;
-    margin-left: 40px;
-    font-weight: 400;
-    transition: 0.3s ease    
+  font-size: 20px;
+  color: var(--highlights);
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: 400;
+  transition: 0.3s ease;
 }
 
-nav a:hover{
-    color: var(--tertiary);
+nav a:hover {
+  color: var(--secondary);
 }
-.left img{
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 50%;
-    border: var(--tertiary) solid 20px;
+.left img {
+  width: 300px;
+  margin-top: 60px;
+  margin-left: 60px;
+  border-radius: 50%;
+  border: var(--tertiary) solid 20px;
+}
+
+.right {
+  padding-top: 25vh;
+  padding-left: 30vh;
 }
 
 .main {
-    color: var(--tertiary);
-    font-weight: 700;
-
+  color: var(--tertiary);
+  font-weight: 700;
 }
 
 .home {
-    display: flex;
-    
+  display: flex;
 }
 
-p{
-    color: var(--highlights);
-    align-content: flex-end;
-
-
+p {
+  color: var(--highlights);
+  align-content: flex-end;
 }
