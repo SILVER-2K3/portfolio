@@ -1,10 +1,54 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
+/*<-------custom cursor--------->*/
+
+.cursor-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: var(--tertiary);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+  transition: .1s;
+}
+
+.cursor-1.active {
+  height: 3rem;
+  width: 3rem;
+  opacity: 0.3;
+  transition: ease 0.5s;
+}
+
+.cursor-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.1rem;
+  width: 2.1rem;
+  border: 0.1rem solid var(--tertiary);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+  transition: 0.1s linear;
+}
+
+.cursor-2.active {
+  display: none;
+  transition: .7s ease;
+}
+
+/*<-------custom cursor end--------->*/
+
 :root {
-  --primary: #081b29;
+    --primary: #081b29;
   --secondary: #00abf0;
   --tertiary: white;
 }
@@ -160,48 +204,6 @@ p {
 
 /*<--- main div-->*/
 
-/*<-------custom cursor--------->*/
-
-.cursor-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0.5rem;
-  width: 0.5rem;
-  background: var(--tertiary);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 10000;
-  transition: .5s;
-}
-
-.cursor-1.active {
-  height: 3rem;
-  width: 3rem;
-  opacity: 0.3;
-  transition: ease 0.5s;
-}
-
-.cursor-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2.1rem;
-  width: 2.1rem;
-  border: 0.1rem solid var(--tertiary);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 10000;
-  transition: 0.3s linear;
-}
-
-.cursor-2.active {
-  display: none;
-}
-
-/*<-------custom cursor end--------->*/
 
 /*<--media query-->*/
 @media (max-width: 450px) {
