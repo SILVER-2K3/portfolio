@@ -1,8 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+:root {
+    --primary: #081b29;
+  --secondary: #00abf0;
+  --tertiary: white;
+}
 /*<-------custom cursor--------->*/
 
 .cursor-1 {
@@ -47,11 +52,7 @@
 
 /*<-------custom cursor end--------->*/
 
-:root {
-    --primary: #081b29;
-  --secondary: #00abf0;
-  --tertiary: white;
-}
+
 
 h1{
     font-weight: 700;
@@ -203,32 +204,50 @@ p {
 }
 /*<--- main div-->*/
 
-.home-sci {
-  display: flex;
-  position: absolute;
-  width: 160px;
-  bottom: 26vh;
-  justify-content: space-between;
-  font-size: 24px;
-}
+/*<--- socials --->*/
 
-.home-sci a{
-  color: var(--secondary);
-}
 
-/*<--- socials --->
-.home-sci a{
-  border: 2px var(--secondary) solid;
+
+.social-btns a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
-  justify-content: center;
-  border-radius: 50%;
-  align-content: center;
-  align-items: center;
-  
+  background: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  font-size: 20px;
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
 }
 
-*/
+.social-btns a:hover{
+  color: var(--primary);
+}
+
+.social-btns a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:var(--secondary);
+  z-index: -1;
+  transition: .5s;
+}
+
+.social-btns a:hover::before{
+  width: 100%;
+}
+/*<--- socials --->*/
 
 
 
