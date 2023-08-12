@@ -201,11 +201,72 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 /*<--- main div-->*/
 
+.home-sci {
+  display: flex;
+  position: absolute;
+  width: 160px;
+  bottom: 26vh;
+  justify-content: space-between;
+  font-size: 24px;
+}
 
-/*<--media query-->*/
+.home-sci a{
+  color: var(--secondary);
+}
+
+/*<--- socials --->
+.home-sci a{
+  border: 2px var(--secondary) solid;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  border-radius: 50%;
+  align-content: center;
+  align-items: center;
+  
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<--media query-->*
 @media (max-width: 450px) {
   .left img {
     width: 130px;

@@ -1,0 +1,44 @@
+/*<---socials-->*/
+
+.home-sci {
+  position: absolute;
+  bottom: 165px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a{
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid blue;
+  border-radius: 50%;
+  font-size: 25px;
+  color:green;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+}
+
+home-sci a:hover {
+  columns: green;
+}
+
+.home-sci a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: blue;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-sci a:hover::before {
+  width: 100%;
+}
