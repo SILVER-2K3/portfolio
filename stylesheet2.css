@@ -71,7 +71,7 @@ home-sci a:hover {
   }
 
   .left{
-    padding-left: 80px;
+    margin: auto;
   }
 
   .nav-bar{
@@ -107,7 +107,7 @@ home-sci a:hover {
   }
 
   .about-container .btn-box{
-    padding-left: 8vh;
+    margin: auto;
   }
 
 }
@@ -132,8 +132,7 @@ home-sci a:hover {
    }
  
    .left{
-     padding-left: 80px;
-     margin-bottom: 1vh;
+     margin: auto;
    }
  
    .nav-bar{
@@ -169,7 +168,7 @@ home-sci a:hover {
    }
  
    .about-container .btn-box{
-     padding-left: 8vh;
+     margin: auto;
    }
  
  }
