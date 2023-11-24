@@ -1,3 +1,4 @@
+
 /*<---socials-->*
 
 
@@ -63,7 +64,7 @@ home-sci a:hover {
   .home {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 30vh;
+    margin-bottom: 8vh;
   }
   
   .body{
@@ -72,6 +73,11 @@ home-sci a:hover {
 
   .left{
     margin: auto;
+  }
+
+  .nav{
+    background-color: var(--primary);
+    z-index: 1000;
   }
 
   .nav-bar{
@@ -115,6 +121,26 @@ home-sci a:hover {
 
 /*<--- 922px-->*/
 @media (max-width:922px) {
+
+  .hamburger{
+    display:none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+  
+  .hamburger div{
+    width: 30px;
+    height: 2px;
+    margin-left: 6px 0;
+    background-color: #00abf0; 
+  }
+  
+
+
+
   .cursor-1{
    display: none;
   }
@@ -124,7 +150,7 @@ home-sci a:hover {
    .home {
      display: flex;
      flex-direction: column-reverse;
-     margin-bottom: 30vh;
+     margin-bottom: 7vh;
    }
    
    .body{
@@ -134,9 +160,14 @@ home-sci a:hover {
    .left{
      margin: auto;
    }
+
+   .nav{
+    z-index: 1000;
+   }
  
    .nav-bar{
      margin-left: 12px;
+     z-index: 1000;
    }
  
    .left img {
@@ -151,8 +182,11 @@ home-sci a:hover {
      padding-top: 9vh;
      font-weight: 300;
      padding-left: 3vh;
-     
    }
+    .right p {
+      display:inline-flexbox;
+      columns: 400px;
+    }
  
    .main .btn-box{
      display: flex;
