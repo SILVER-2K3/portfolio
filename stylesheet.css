@@ -5,8 +5,8 @@
 
 :root {
     --primary: #081b29;
-  --secondary: #00abf0;
-  --tertiary: white;
+    --secondary: #00abf0;
+    --tertiary: white;
 }
 /*<-------custom cursor--------->*/
 
@@ -80,16 +80,18 @@ body {
   align-items: center;
   gap: 20vh;
   background-color:var(--primary);
+  margin-bottom: 20vh;
 }
 
-.header {
+.head{
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
+  padding: 15px 10%;
+  background-color: var(--primary);
+  justify-content: space-around;
   z-index: 100;
 }
 .left {
@@ -115,6 +117,7 @@ nav {
   color: var(--highlights);
   text-decoration: none;
   font-weight: 600;
+  padding-right: 300px;
 }
 
 nav a {
@@ -136,15 +139,15 @@ nav a:hover {
 
 .left img {
   width: 300px;
-  margin-top: 115px;
+  margin-top: 27vh;
   margin-left: 60px;
   border-radius: 50%;
   border: var(--tertiary) solid 20px;
 }
 
 .right {
-  padding-top: 25vh;
-  padding-left: 30vh;
+  padding-top: 32vh;
+  padding-left: 32vh;
 }
 
 
@@ -179,6 +182,7 @@ nav a:hover {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    cursor: none;
 }
 
 .btn-box a:hover{
@@ -247,6 +251,7 @@ p {
   z-index: 1;
   overflow: hidden;
   transition: .5s;
+  cursor: none;
 }
 
 .social-btns a:hover{
@@ -287,6 +292,8 @@ p {
 .about-heading{
   grid-column-start: 1;
   grid-column-end: 4;
+  font-size: 1.8rem;
+
 }
 
 .btn-box.btns a{
@@ -322,4 +329,248 @@ p {
 }
 
 /*<---- about----->*/
+
+
+
+
+
+
+
+
+
+/*<----- contact---->*/
+
+
+.contact{
+  display: flex;
+}
+.contact-head{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.8rem;
+  color: var(--tertiary);
+  margin-bottom: 30px;
+}
+
+#contact>div{
+
+  /* border:1px solid black; */
+  width:50%;
+  background-color: var(--secondary);
+  margin: 40px 60px;
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  padding: 15px 0px;
+}
+
+.name-phone{
+  display: flex;
+  justify-content: space-around;
+}
+
+.send-info{
+  /* border:1px solid black; */
+  width:45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-info>div{
+  /* border:1px solid black; */
+  border-radius: 20px;
+  width:80%;
+  margin:20px auto;
+  height: 100%;
+  padding: 10px;
+
+}
+.input-box{
+  /* border:1px solid black; */
+  border-radius: 8px;
+  background-color: var(--primary);
+  margin: 15px 20px;
+}
+
+.input-box>input {
+  background-color: var(--primary);
+  border: none;
+  resize: none;
+  height: 3.0rem;
+  border-radius:20px ;
+  font-size: 14px;
+  padding:0px 15px 10px;
+  color:white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-box>textarea{
+  background-color: var(--primary);
+  border: none;
+  resize: none;
+  height: 36vh;
+  border-radius:20px ;
+  font-size: 14px;
+  padding:0px 15px 10px;
+  color:white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+::placeholder{
+  color: var(--tertiary);
+  opacity: 0.8;
+}
+
+.input-box>input:focus , .input-box>textarea:focus{
+  outline: none;
+}
+
+.submit-btn {
+  margin: 15px 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn>button{
+  position: relative;
+  padding: 10px 12px;
+  cursor: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 93%;
+  background: var(--primary);
+  border: 5px solid var(--primary);
+  border-radius: 8px;
+  font-size: 20px;
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.submit-btn>button:hover{
+  border: 7px solid var(--primary);
+}
+
+
+
+#social-grid{
+  display: grid !important;
+  background-color: transparent !important;
+  grid-template-columns: repeat(2 ,1fr) ;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  padding: 0px 0px !important;
+}
+
+
+/* Instagram logo*/
+#social-grid a:nth-child(1){
+  grid-row-start: 2 !important;
+  grid-row-end: 4 !important;
+  color: var(--secondary);
+  background-color: var(--primary);
+  height: auto;
+  justify-self: end !important;
+}
+
+/*Twitter logo*/
+#social-grid a:nth-child(2){
+  grid-row-start: 1 !important;
+  grid-row-end: 2 !important;
+  height: auto;
+  justify-self: end !important;
+}
+
+/*Linked-in logo*/
+#social-grid a:nth-child(3){
+  grid-row-start: 1 !important;
+  grid-row-end: 3 !important;
+  color: var(--secondary);
+  background-color: var(--primary);
+  height: auto;
+  justify-self: start !important;
+}
+
+/*Github logo*/
+#social-grid a:nth-child(4){
+  grid-row-start: 3 !important;
+  grid-row-end: 4 !important;
+  height: auto;
+  justify-self: start !important;
+}
+
+.mail-phone{
+  grid-column-start: -3 !important;
+  grid-column-end: -1 !important;
+  background-color: var(--primary)!important;
+  border: 4px solid var(--secondary) !important;
+  overflow:hidden !important;
+  border-radius:8px;
+  width: 48.7vh !important;
+  font-weight: 500;
+  font-size: small;
+  /*margin: 0px calc() !important;*/
+}
+
+.mail-phone p{
+  border-left: 20px solid transparent !important;
+  margin-bottom: 10px !important;
+  
+}
+
+.social-grid a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 93%;
+  height: 50px;
+  background: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  font-size: 30px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+  cursor: none;
+}
+
+.socail-grid a:hover{
+  color: var(--primary);
+}
+
+.socail-grid a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:var(--primary);
+  z-index: -1;
+  transition: .5s;
+}
+
+.socail-grid a:hover::before{
+  width: 100%;
+}
+
+
+/*<----- contact---->*/
 

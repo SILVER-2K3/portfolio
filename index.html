@@ -23,7 +23,7 @@
   <div class="cursor-2"></div>
 
   <body>
-    <header>
+    <header class="head">
       <nav>
         <div class="nav-bar">Bruhhh</div><!--edit-->
         <div class="nav-bar">
@@ -35,7 +35,8 @@
         </div>
       </nav>
     </header>
-
+    
+    <!----home Section---->
     <section class="home">
       <div class="left">
         <img src="images/dp.jpg" />
@@ -66,10 +67,12 @@
           <a href="#"><i class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/SILVER-2K3"><i class='bx bxl-github'></i></a>
         </div>
-
+        
       </div>
     </section>
-
+    <!----home Section---->
+    
+    <!----about Section---->
     <section class="about" id="about">
       <h1 class="about-heading">About <span>Me</span></h1>
       <div class="about-img"><img src="images/dp.jpg"></div>
@@ -84,10 +87,59 @@
       </div>
 
     </section>
-    
+    <!----about Section---->
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script src="script.js"></script>
-  </body>
+
+    <!----contact Section---->
+    
+    <h1 class="contact-head">Contact</h1>
+    <section class="contact" id="contact">
+      <div class="send-info">
+          <form
+          action=""
+          method="POST"
+          >
+          <div class="name-phone">
+            <div class="input-box">
+              <input type="text" placeholder="Name" name="name" required/>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Phone (optional)"/>
+            </div>
+          </div>
+          
+          <div class="input-box">
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
+                  <div class="input-box">
+                      <textarea type="text" rows="5" maxlength="500" name="message" placeholder="Message" required ></textarea>
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit" id="form-submit">Send</button>
+                  </div>
+              </form>
+          </div>
+  </div>
+
+  <div class="social-grid" id="social-grid"> <!--btn-box replace kar ke deakh-->
+    <a href="https://www.instagram.com/aatmanirbhar_sahil/"><i class="bx bxl-instagram"></i></a>
+    <a href="https://twitter.com/Bitch_Paratha"><i class="bx bxl-twitter"></i></a>
+    <a href="#"><i class="bx bxl-linkedin"></i></a>
+    <a href="https://github.com/SILVER-2K3"><i class='bx bxl-github'></i></a>
+    <div class="mail-phone">
+    <p> Email <br/>
+      sahilbalchandani109@gmail.com</p>
+    <p> Phone Number <br/>
+      +91 6305447154</p>
+    </div>
+    
+  </div>
+</section>
+<!----contact Section---->
+
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script src="script.js"></script>
+</body>
 </html>
