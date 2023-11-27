@@ -190,18 +190,18 @@ nav a:hover {
 }
 
 .btn-box a:nth-child(2){
-    background: transparent;
-    color: var(--secondary);
+  background: transparent;
+  color: var(--secondary);
 }
 
 .btn-box a:nth-child(2):hover{
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .btn-box a:nth-child(2)::before{
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 
-  }
+}
 
 .btn-box a::before{
     content: '';
@@ -551,11 +551,29 @@ p {
   cursor: none;
 }
 
-.socail-grid a:hover{
+.social-grid a:hover{
+  color: var(--secondary) !important;
+}
+
+.social-grid a:nth-child(1):hover{
   color: var(--primary) !important;
 }
 
-.socail-grid a::before{
+.social-grid a:nth-child(1)::before{
+  background-color: var(--secondary) !important;
+
+}
+
+.social-grid a:nth-child(3):hover{
+  color: var(--primary) !important;
+}
+
+.social-grid a:nth-child(3)::before{
+  background-color: var(--secondary) !important;
+
+}
+
+.social-grid a::before{
   content: '' !important;
   position: absolute !important;
   top: 0 !important;
@@ -567,7 +585,7 @@ p {
   transition: .5s !important;
 }
 
-.socail-grid a:hover::before{
+.social-grid a:hover::before{
   width: 100% !important;
 }
 
