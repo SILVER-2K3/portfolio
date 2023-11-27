@@ -514,7 +514,7 @@ p {
   grid-column-start: -3 !important;
   grid-column-end: -1 !important;
   background-color: var(--primary)!important;
-  border: 4px solid var(--secondary) !important;
+  border: 2px solid var(--secondary) !important;
   overflow:hidden !important;
   border-radius:8px;
   width: 48.7vh !important;
@@ -552,23 +552,23 @@ p {
 }
 
 .socail-grid a:hover{
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .socail-grid a::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background:var(--primary);
-  z-index: -1;
-  transition: .5s;
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 100% !important;
+  background:var(--primary) !important;
+  z-index: -1 !important;
+  transition: .5s !important;
 }
 
 .socail-grid a:hover::before{
-  width: 100%;
+  width: 100% !important;
 }
 
 
