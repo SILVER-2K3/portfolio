@@ -316,6 +316,9 @@ p {
   grid-column-start: 1;
   grid-column-end: 4;
   align-self: center;
+  margin-left: 330px;
+  padding-right: 220px;
+  
 }
 .about-container.para h3{
   margin-left: 30vh;
@@ -329,14 +332,6 @@ p {
 }
 
 /*<---- about----->*/
-
-
-
-
-
-
-
-
 
 /*<----- contact---->*/
 
