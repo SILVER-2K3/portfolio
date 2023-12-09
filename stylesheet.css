@@ -89,7 +89,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 10%;
+  padding: 0px 10%; 
   background-color: var(--primary);
   justify-content: space-around;
   z-index: 100;
@@ -108,7 +108,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: var(--primary);
-  margin-top: 10px;
+  margin-top: 15px;
   z-index: 1000;
 }
 
@@ -117,7 +117,8 @@ nav {
   color: var(--highlights);
   text-decoration: none;
   font-weight: 600;
-  padding-right: 300px;
+  padding-right: 159px;
+  padding-bottom: 20px;
 }
 
 nav a {
@@ -301,7 +302,6 @@ p {
   padding: 17px;
   width: 110px;
   font-weight: 400;
-  margin-left: 30vh;
 }
 
 /*
@@ -316,14 +316,24 @@ p {
   grid-column-start: 1;
   grid-column-end: 4;
   align-self: center;
-  margin-left: 330px;
-  padding-right: 220px;
+  display: flex;
+  flex-direction: column;
   
 }
+
+.about-container.para p{
+  columns: 300px 3;
+}
 .about-container.para h3{
-  margin-left: 30vh;
+  display: flex ;
+  justify-content: center;
 }
 
+/*
+.about-container.btn-box.btns{
+  display: flex;
+  justify-content: center;
+}*/
 
 .about-img img{ 
   width: 250px;
