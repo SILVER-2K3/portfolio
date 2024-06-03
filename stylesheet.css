@@ -597,3 +597,59 @@ p {
 
 /*<----- contact---->*/
 
+
+
+/*<----- Skills---->*/
+.skills{
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.skills-card{
+  margin-bottom: 110px;
+}
+
+/*
+#skills-sec, #projects-sec, #contact-sec{
+  height: 12vh;
+}*/
+
+#skills>h1{
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--tertiary);
+  margin-bottom: 30px;
+}
+
+#tech {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px 40px;
+}
+
+#tech>div {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+}
+
+#tech>div>img {
+  width: 50px;
+  height: 50px;
+}
+
+#tech>div>p{
+ padding-left: 50%;
+ padding-right: 50%;
+}
+
+/*<----- Skills---->*/
+
