@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteCond %{skills} !-d
-RewriteCond %{skills}.html -f
-RewriteRule ^(.*)$ $1.html
