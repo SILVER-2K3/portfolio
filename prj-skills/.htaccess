@@ -1,4 +1,4 @@
 RewriteEngine on
 RewriteCond %{skills.html} !-d
-RewriteCond %{skills.html}.html -f
+RewriteCond %{skills}.html -f
 RewriteRule ^(.*)$ $1.html
