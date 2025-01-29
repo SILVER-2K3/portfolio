@@ -7,7 +7,7 @@ var typed = new Typed("#element", {
 });
 
 var typed = new Typed("#secondary", {
-  strings: ["Silver"],
+  strings: ["Sahil Balchandani"],
   typeSpeed: 40,
 });
 
