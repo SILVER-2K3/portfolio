@@ -1,231 +1,235 @@
+/* Mobile & Tablet Responsive Styles */
 
-/*<---socials-->*
-
-
-
-922px star
-
-
-.home-sci {
-  position: absolute;
-  bottom: 165px;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
+/* Hide custom cursors on small/touch screens */
+@media (max-width: 922px) {
+  .cursor-1,
+  .cursor-2 {
+    display: none;
+  }
 }
 
-.home-sci a{
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  background: transparent;
-  border: 2px solid blue;
-  border-radius: 50%;
-  font-size: 25px;
-  color:green;
-  text-decoration: none;
-  overflow: hidden;
-  transition: .5s;
-}
+/* General mobile adjustments (up to 922px - tablets and phones) */
+@media (max-width: 922px) {
+  /* Header & Nav */
+  .head {
+    padding: 0 5%;
+  }
 
-home-sci a:hover {
-  columns: green;
-}
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
 
-.home-sci a::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: blue;
-  z-index: -1;
-  transition: 0.5s;
-}
+  .nav-bar {
+    display: none;
+    padding-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
 
-.home-sci a:hover::before {
-  width: 100%;
-}
+  nav a {
+    margin-left: 0;
+    margin: 0 10px;
+    font-size: 18px;
+  }
 
-*/
-
-
-
-/*<--media query-->*/
-@media (width < 350px) {
- .cursor-1{
-  display: none;
- }
- .cursor-2{
-  display: none;
- }
+  /* Home Section */
   .home {
-    display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 8vh;
-  }
-  
-  .body{
-  size: 348px 627px;
-  }
-
-  .left{
-    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10vh;
+    padding: 0 5%;
   }
 
-  .nav{
-    background-color: var(--primary);
-    z-index: 1000;
-  }
-
-  .nav-bar{
-    margin-left: 12px;
+  .left {
+    margin: 0 auto;
   }
 
   .left img {
+    width: 180px;
+    margin-top: 40px;
+    margin-left: 0;
+    border-width: 8px;
+  }
+
+  .right {
+    padding: 15vh 5% 0;
+    text-align: center;
+  }
+
+  .right h1 {
+    font-size: 2.5rem;
+  }
+
+  .right p {
+    columns: auto;
+    max-width: 100%;
+    margin: 30px auto;
+    font-size: 1.2rem;
+  }
+
+  .main .btn-box {
+    width: 100%;
+    max-width: 350px;
+    margin: 30px auto;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn-box a {
     width: 160px;
-    margin-top: 70px;
-    margin-left: 17px;
-    border-radius: 50%;
-    border: var(--tertiary) solid 3px;
+    font-size: 18px;
   }
 
-  .right{
-    padding-top: 9vh;
-    font-weight: 300;
-    padding-left: 3vh;
-    
+  /* Social icons in home (uncomment if you use .home-sci) */
+  .home-sci {
+    bottom: 100px;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .main .btn-box{
-    display: flex;
-    width: 317px;
+  /* About Section */
+  .about {
+    gap: 8vh;
+    padding: 0 5%;
   }
 
-  .about{
-    gap: 10vh;
+  .about-img img {
+    width: 200px;
+    margin-bottom: 20px;
   }
 
-  .about-container{
-    padding-left: 3vh;
+  .about-container {
+    text-align: center;
   }
 
-  .about-container .btn-box{
-    margin: auto;
+  .about-container .btn-box {
+    margin: 30px auto;
+    justify-content: center;
   }
 
+  /* Skills Section */
+  #tech {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 90%;
+  }
+
+  #tech > div > img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Contact Section */
+  .contact {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  #contact > div {
+    width: auto;
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  .name-phone,
+  .send-info {
+    width: 100%;
+  }
+
+  #social-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .mail-phone {
+    width: auto !important;
+  }
 }
 
-
-/*<--- 922px-->*/
-@media (max-width:922px) {
-
-  .hamburger{
-    display:none;
-    height: fit-content;
-    cursor: pointer;
-    padding: 3px 8px;
-    border-radius: 5px;
-    transition: 0.2s;
+/* Extra small phones (under 480px) - finer adjustments */
+@media (max-width: 480px) {
+  .left img {
+    width: 150px;
+    border-width: 6px;
   }
-  
-  .hamburger div{
-    width: 30px;
-    height: 2px;
-    margin-left: 6px 0;
-    background-color: #00abf0; 
+
+  .right {
+    padding-top: 10vh;
   }
-  
 
-
-
-  .cursor-1{
-   display: none;
+  .right h1 {
+    font-size: 1.8rem;
   }
-  .cursor-2{
-   display: none;
+
+  .main .btn-box {
+    flex-direction: column;
+    height: 120px;
+    align-items: center;
+    gap: 15px;
   }
-   .home {
-     display: flex;
-     flex-direction: column-reverse;
-     margin-bottom: 7vh;
-   }
-   
-   .body{
-   size: 348px 627px;
-   }
- 
-   .left{
-     margin: auto;
-   }
 
-   .nav{
-    z-index: 1000;
-   }
- 
-   .nav-bar{
-     margin-left: 12px;
-     z-index: 1000;
-   }
- 
-   .left img {
-     width: 160px;
-     margin-top: 70px;
-     margin-left: 17px;
-     border-radius: 50%;
-     border: var(--tertiary) solid 3px;
-   }
- 
-   .right{
-     padding-top: 9vh;
-     font-weight: 300;
-     padding-left: 3vh;
-   }
-    .right p {
-      display:inline-flexbox;
-      columns: 400px;
-    }
- 
-   .main .btn-box{
-     display: flex;
-     width: 317px;
-   }
- 
-   .about{
-     gap: 10vh;
-   }
- 
-   .about-container{
-     padding-left: 3vh;
-   }
- 
-   .about-container .btn-box{
-     margin: auto;
-   }
- 
- }
-/*
-@media only screen and (max-width: 600px) {
-    {
+  .btn-box a {
+    width: 200px;
+  }
 
-    }}
+  #tech {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {...}
+  #tech > div > img {
+    width: 50px;
+    height: 50px;
+  }
 
-/* Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {...}
+  .about {
+    grid-template-rows: auto;
+  }
 
-/* Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}
+  .about-container.para p {
+    columns: 250px 3;
+    margin-left: 0px;
+    /* align-items: center; */
+    padding: 5px;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...}
+  .about-img img {
+    width: 180px;
+    display: none;
+    /* margin-left: 100px; */
+  }
 
+  .mobileskill {
+    display: contents;
+  }
 
+  /* .btn-box.btns a{} */
 
+  /* Make social grid more compact */
+  #social-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
 
+  /* Adjust any large text */
+  p {
+    font-size: 1rem;
+  }
+}
 
+/* Very tiny screens (under 350px) - hide non-essential if needed */
+@media (max-width: 350px) {
+  .left img {
+    width: 140px;
+  }
 
+  .btn-box a {
+    width: 180px;
+    font-size: 16px;
+  }
+}

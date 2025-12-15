@@ -293,6 +293,7 @@ p {
 .about-heading{
   grid-column-start: 1;
   grid-column-end: 4;
+  margin: auto;
   font-size: 1.8rem;
 
 }
@@ -322,7 +323,8 @@ p {
 }
 
 .about-container.para p{
-  columns: 300px 3;
+  columns: 250px 3;
+  margin-left: 50px;
 }
 .about-container.para h3{
   display: flex ;
@@ -338,10 +340,14 @@ p {
 .about-img img{ 
   width: 250px;
   border-radius: 8%;
-  align-self: self-end;
+  margin: auto;
 }
 
 /*<---- about----->*/
+
+.mobileskill{
+  display: none;
+}
 
 /*<----- contact---->*/
 
@@ -518,6 +524,7 @@ p {
 .mail-phone{
   grid-column-start: -3 !important;
   grid-column-end: -1 !important;
+  margin: auto;
   background-color: var(--primary)!important;
   border: 2px solid var(--secondary) !important;
   overflow:hidden !important;
@@ -653,3 +660,21 @@ p {
 
 /*<----- Skills---->*/
 
+/*<----- Projects---->*/
+  .giga-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .giga-container>p{
+    width: auto;
+    padding: 7vw;
+    margin: 20px;
+    border-radius: 8px;
+    color: var(--secondary);
+    /* background-image: url(); */
+    font-weight: 525;
+    font-size: 25px;
+    border: 2px solid var(--secondary);
+  }
+/*<----- Projects---->*/
