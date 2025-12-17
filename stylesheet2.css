@@ -93,7 +93,7 @@
 
   /* About Section */
   .about {
-    gap: 8vh;
+    gap: 0vh;
     padding: 0 5%;
   }
 
@@ -106,9 +106,33 @@
     text-align: center;
   }
 
+  .about-container a{
+    padding: 11px !important;
+    width: 110px;
+    
+  }
+
   .about-container .btn-box {
     margin: 30px auto;
     justify-content: center;
+  }
+
+  .mobileskill {
+    display: flex;
+    width:  120px;
+    height: 50px;
+    
+  }
+
+  .mobileskill a{
+    background: transparent;
+    color: var(--secondary);
+  }
+
+  .mobileskill-container{
+    display: flex;
+    padding-bottom:50px;
+    justify-content: space-around;
   }
 
   /* Skills Section */
@@ -149,6 +173,49 @@
   .mail-phone {
     width: auto !important;
   }
+
+ /* Instagram logo*/
+#social-grid a:nth-child(1){
+  grid-column-start: 1 !important;
+  grid-column-end: 2 !important;
+  width: 100%;
+  color: var(--secondary);
+  background-color: var(--primary);
+  height: auto;
+  justify-self: end !important;
+}
+
+/*Twitter logo*/
+#social-grid a:nth-child(2){
+  grid-column-start: 1 !important;
+  grid-column-end: 3 !important;
+  width: 100%;
+  height: auto;
+  justify-self: end !important;
+}
+
+/*Linked-in logo*/
+#social-grid a:nth-child(3){
+  grid-column-start: -2 !important;
+  grid-column-end: 4 !important;
+  color: var(--secondary);
+  width: 100%;
+  background-color: var(--primary);
+  height: auto;
+  justify-self: start !important;
+}
+
+/*Github logo*/
+#social-grid a:nth-child(4){
+  grid-column-start: 2 !important;
+  grid-column-end: 4 !important;
+  width: 100%;
+  height: auto;
+  justify-self: start !important;
+}
+
+
+
 }
 
 /* Extra small phones (under 480px) - finer adjustments */
@@ -205,15 +272,34 @@
   }
 
   .mobileskill {
-    display: contents;
+    display: flex;
+    width:  120px;
+    height: 50px;
+  }
+
+  .mobileskill-container{
+    display: flex;
+    padding-bottom:50px;
+    justify-content: space-around;
   }
 
   /* .btn-box.btns a{} */
-
+#social-grid a:nth-child(2){
+  grid-column-start: 1 !important;
+  grid-column-end: 2 !important;
+  width: 100%;
+  height: auto;
+  justify-self: end !important;
+}
   /* Make social grid more compact */
   #social-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+  }
+
+  .mail-phone{
+    grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
   }
 
   /* Adjust any large text */

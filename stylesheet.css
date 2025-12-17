@@ -117,8 +117,19 @@ nav {
   color: var(--highlights);
   text-decoration: none;
   font-weight: 600;
-  padding-right: 159px;
+  padding-right: 160px;
   padding-bottom: 20px;
+  
+}
+
+.nav-logo a{
+  font-size: 20px;
+  display: flex;
+  margin-top: 15px;
+  color: var(--highlights);
+  text-decoration: none;
+  font-weight: 600;
+  padding-right: 159px;
 }
 
 nav a {
@@ -522,9 +533,10 @@ p {
 }
 
 .mail-phone{
-  grid-column-start: -3 !important;
+  grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   margin: auto;
+  width: 100%;
   background-color: var(--primary)!important;
   border: 2px solid var(--secondary) !important;
   overflow:hidden !important;
