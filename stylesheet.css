@@ -336,6 +336,8 @@ p {
 .about-container.para p{
   columns: 250px 3;
   margin-left: 50px;
+  margin-right: 50px;
+  font-weight: 600;
 }
 .about-container.para h3{
   display: flex ;
