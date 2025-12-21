@@ -716,8 +716,9 @@ p {
   grid-template-rows: repeat(4, 1fr);
 }
 
-.giga-container>p {
+.giga-container>a {
   width: auto;
+  text-decoration: none;
   padding: 7vw;
   margin: 20px;
   border-radius: 8px;
